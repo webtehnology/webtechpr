@@ -1,0 +1,3 @@
+block('office')(
+    js()(true)
+);

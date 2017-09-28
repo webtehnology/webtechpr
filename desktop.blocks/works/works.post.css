@@ -1,0 +1,123 @@
+.works{
+	margin-left: -75px;	
+	&_location_page{
+	margin-left: 0px;
+	}
+	&__list{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 100px 0;
+
+	}
+	&_location_page
+	&__list{
+	margin-left: -75px;
+	width: 1350px;
+	}
+	&__item{
+	    background-color: #4f4f4f;
+	    background-position: 50%;
+	    background-size: cover;
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	    position: relative;
+	    margin-bottom: 32px;
+	    z-index: 1;
+	    height: 286px;
+	    -webkit-perspective: 400px;
+	    -moz-perspective: 400px;
+	    perspective: 400px;
+	    overflow: hidden;
+	}
+	&__item_big{
+	width: calc(100% - (100%/3 - 32px));
+	margin-right: 32px;
+	}
+	&__item_mini{
+	width: calc(100%/3 )
+	}
+	&__inner{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-size: cover;
+	filter: grayscale(100%);
+  	filter: gray;
+  	transition: all 1s;
+	}
+	&__inner:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #272727.84;
+	}
+
+	&__inner:hover{
+	filter:none;
+	}
+	&__inner:hover:after{
+	background-color: rgba(28,28,28,0.55);
+	}
+	&__done{
+	display: flex;
+	position: absolute;
+	top:15px;
+	left: 15px;
+	color: #fff;
+	z-index: 100;
+	}
+	&__done-item{
+	padding:0  45px 0 0;
+	font-family:'roboto',Arial,sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	}
+	&__title{
+	position: absolute;
+	top:135px;
+	left: 15px;
+	z-index: 100;
+	color: #fff;
+	font-family:'roboto',Arial,sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	transition: all 1s;
+	}
+	&__inner:hover &__title{
+	top: 85px;
+	}
+	&__desc{
+	max-width: 395px;
+	position: absolute;
+	top:195px;
+	left: 15px;
+	font-family:'graphik-reg',Arial,sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	z-index: 100;
+	color: #fff;
+	opacity: 0;
+	transition: all 1s;
+	}
+	&__inner:hover &__desc{
+	top: 130px;
+	opacity: 1;
+	}
+	&__link{
+	position: absolute;
+	top:265px;
+	left: 15px;
+	opacity: 0;
+	transition: all 1s;
+	z-index: 100;
+	}
+	&__inner:hover &__link{
+	top: 200px;
+	opacity: 1;
+	}
+}

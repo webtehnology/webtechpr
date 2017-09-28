@@ -1,0 +1,10 @@
+.map {
+	margin-bottom: 3rem;
+    position:relative;
+    top:0;
+    left: 0;
+    width: 820px;
+    height: 650px;
+    background: #ccc;
+    z-index: 1;
+    }

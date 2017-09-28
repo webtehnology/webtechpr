@@ -1,0 +1,110 @@
+.contact{
+	&_location_page{
+	padding: 100px 0 0 0;
+	}
+	&__inner{
+	display: flex;
+	justify-content: space-between;
+	}
+	&__maps{
+	margin-left: -75px;
+	}
+	&__data{
+	width: 300px;
+	}
+	&__title{
+	font-family:'graphik-reg',Arial,sans-serif;
+	font-size: 18px;
+	line-height: 26px;
+	color: $color-submain;
+	margin-bottom: 10px;
+	opacity: .4;
+	}
+	&__addr{
+	width: 300px;
+	margin-bottom: 30px;
+	font-family:'graphik-reg',Arial,sans-serif;
+	font-size: 18px;
+	line-height: 26px;
+	color: $color-submain;
+	}
+	&__call{
+	display: inline-block;
+	margin-bottom: 30px;
+	font-family:'graphik-bold',Arial,sans-serif;
+	font-size: 24px;
+	line-height: 36px;
+	color: $color-submain;
+	border-bottom:1px dashed;
+	transition: all .8s;
+	}
+	&__mail{
+	display: inline-block;
+	margin-bottom: 30px;
+	font-family:'graphik-bold',Arial,sans-serif;
+	font-size: 24px;
+	line-height: 36px;
+	color: $color-submain;
+	border-bottom:1px dashed;
+	transition: all .8s;
+	}
+	&__call:hover, &__mail:hover{
+	color: $color-main;
+	}
+	&__doc{
+	display: inline-block;
+	position: relative;
+	padding-left: 65px; 
+	margin-bottom: 30px;
+	font-family:'graphik-bold',Arial,sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: $color-submain;
+	
+
+	}
+	&__doc:after{
+	content: '\e903';
+	font-family:'webtech';
+	font-size: 42px;
+	position: absolute;
+	left: 0px;
+	top: 10px;
+	}
+	&__doc span{
+	display: block;
+	font-family:'graphik-reg',Arial,sans-serif;
+	font-size: 16px;
+	opacity: .4;
+	}
+	&__arrow{
+	position: absolute;
+	top:7px;
+	right: -50px;
+	width: 40px;
+	height: 10px;
+	overflow: hidden;
+
+	}
+	&__arrow svg{
+	margin-left: -10px;
+	transition: all .6s ease;
+	fill:#151515;
+	stroke:#151515;
+	}
+	&__doc:hover{
+	color: $color-main;
+	}
+	&__doc:hover &__arrow svg{
+	fill:$color-main;
+	stroke:$color-main;
+	margin-left: 0px;
+	}
+}
+
+.contact__main-phone{
+	margin: 10px 0 0 20px;
+	font-family:'graphik-reg',Arial,sans-serif;
+	font-size: 18px;
+	color: $color-main;
+}

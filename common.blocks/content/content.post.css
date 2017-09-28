@@ -1,0 +1,42 @@
+.content{
+	position: relative;
+	width: 100%;
+	top: 0;
+	left: 0;
+	&__inner{
+	transition-property: transform,opacity;
+    transform: scale(1) translateX(0%);
+    transition-duration: .8s; 
+	}
+	&__inner_menu_active{
+	opacity: .5;
+	transform: scale(.95) translateX(1.5%);
+	}
+
+	&__title{
+	font-family:'graphik-bold',Arial,sans-serif;
+    font-weight: 900;
+    font-size: 106px;
+    line-height: .9642;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 35px;
+    letter-spacing: .025em;
+    color: $color-submain;
+    text-transform: uppercase;
+	}
+	&__data{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .42s;
+    box-sizing: border-box;
+	}
+	&__inside{
+	padding: 156px 0 0 0;
+	width: 1200px;
+	margin: 0 auto;
+	}
+}

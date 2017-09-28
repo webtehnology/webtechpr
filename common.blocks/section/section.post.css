@@ -1,0 +1,22 @@
+.section{
+	&__title{
+    font-family:'graphik-bold',Arial,sans-serif;
+    font-size: 48px;
+    margin-bottom: 35px;
+    letter-spacing: .025em;
+    color: $color-submain;
+    text-transform: uppercase;
+	}
+    &__title span{
+    color: $color-main;
+    }
+	&__text{
+	display: block;
+	max-width: 700px;
+    margin-bottom: 20px;
+    font-family:'graphik-reg',Arial,sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: inherit;
+	}
+}

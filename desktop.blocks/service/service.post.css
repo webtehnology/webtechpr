@@ -1,0 +1,73 @@
+.service{
+	margin: 100px 0 0 0;
+	&__list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-left: -75px;
+	width: 1200px;
+	}
+	&__item{
+	width: 500px;
+	margin-bottom: 100px;
+	}
+	&__link{
+	position: relative;
+	display: inline-block;
+	font-family:'graphik-bold',Arial,sans-serif;
+    font-size: 40px;
+    line-height: 56px;
+	color: #151515;
+	transition: all .5s ease;
+	}
+	&__link:after {
+    width: 0;
+    height: 2px;
+    transition: width 0.2s ease;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $color-main;
+	}
+	&__link:hover:after {
+    width: 100%;
+
+	}
+	&__link:hover{
+	color:$color-main;
+	}
+	&__arrow{
+	position: absolute;
+	top:45%;
+	right: -60px;
+	width: 40px;
+	height: 10px;
+	overflow: hidden;
+
+	}
+	&__arrow svg{
+	margin-left: -10px;
+	transition: all .6s ease;
+	fill:#151515;
+	stroke:#151515;
+	}
+	&__link:hover &__arrow svg{
+	fill:$color-main;
+	stroke:$color-main;
+	margin-left: 0px;
+	}
+	&__text{
+	display: block;
+	font-family:'graphik-reg',Arial,sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+	color: #151515;
+	}
+	&__text span{
+	display: block;
+	margin-top: 10px;
+	opacity: .4;
+	}
+}

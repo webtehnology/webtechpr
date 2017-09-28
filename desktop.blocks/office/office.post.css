@@ -1,0 +1,79 @@
+.office{
+        position: relative;
+        overflow: hidden;
+        &__list{
+        overflow: hidden;
+        }
+        &__item{
+        position: relative;
+        display: inline-block;
+        height: 310px;
+        width: 470px;
+        margin-right: 90px;
+        background-size: cover;
+        /*transform: translateX(-101%) matrix(.55, 0, 0, .55, 0, 0);
+        transition: transform .8s cubic-bezier(.645,.045,.355,1);*/
+ /*       -ms-transform-origin: 0% 50%;
+        transform-origin: 0% 50%;*/
+        opacity: 1;
+        transition: 1s linear;
+        }
+        &__item_state_active{
+        opacity: 1;
+       /* transform: translateX(0%) matrix(1, 0, 0, 1, 0, 0);*/
+        }
+        &__nav{
+        position:relative;
+        display: flex;
+        justify-content: space-between;
+        width: 100px;
+        margin-left: 75px;
+        margin-top: 50px;
+        padding-bottom: 50px;
+
+        }
+        &__control-left{
+        position: relative;
+
+        width: 20px;
+        height: 20px;
+        border: 4px solid $color-submain;
+        border-left: none;
+        border-bottom: none;
+        transform: rotate(45deg) matrix(1, 0, 0, 1, 0, 0);
+        cursor: pointer;
+        transition: transform .7s cubic-bezier(.645,.045,.355,1);
+        }
+        &__control-right{
+        position: relative;
+        margin-left: 10px;
+        width: 20px;
+        height: 20px;
+        border: 4px solid $color-submain;
+        border-right: none;
+        border-top: none;
+        transform: rotate(45deg) matrix(1, 0, 0, 1, 0, 0);
+        cursor: pointer;
+        transition: transform .7s cubic-bezier(.645,.045,.355,1);
+        }
+        &__control-right:hover{
+        transform: rotate(45deg) matrix(1.35, 0, 0, 1.35, 0, 0);
+        border: 4px solid $color-main;
+        border-right: none;
+        border-top: none;
+        }
+        &__control-left:hover{
+        transform: rotate(45deg) matrix(1.35, 0, 0, 1.35, 0, 0);
+        border: 4px solid $color-main;
+        border-left: none;
+        border-bottom: none;
+        }
+}
+
+
+.office__item_type_next,
+.office__item_type_prev{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

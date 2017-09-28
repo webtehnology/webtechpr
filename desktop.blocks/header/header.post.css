@@ -1,0 +1,34 @@
+.header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 750;
+	padding: 33px 0;
+}
+.header{
+	display: flex;
+	justify-content: flex-start;
+}
+.header_white{
+	color:$color-white;
+}
+.header_dark{
+	color:$color-submain;
+}
+.header__logo{
+	padding: 0px 10px 0px 45px;
+	width:200px; 
+    height:35px;
+    position: relative;
+    z-index: 200;
+    transition: transform .8s cubic-bezier(.645,.045,.355,1);
+}
+.header__tagline{
+	flex-basis: 800px;
+	padding: 6px 0 0 0;
+	font-size: 14px;
+	line-height: 17px;
+	font-family:'graphik-reg',Arial,sans-serif;
+	color: inherit;
+}

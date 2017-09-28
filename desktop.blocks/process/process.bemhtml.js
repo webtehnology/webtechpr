@@ -1,0 +1,3 @@
+block('process')(
+    js()(true)
+);

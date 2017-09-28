@@ -1,0 +1,119 @@
+.job{
+	padding: 100px 0 0 0;
+	&__title{
+	font-family:'graphik-bold',Arial,sans-serif;
+    font-size: 48px;
+    margin-bottom: 35px;
+    letter-spacing: .025em;
+    color: $color-submain;
+	}
+	&__text{
+    max-width: 700px;
+    margin-bottom: 20px;
+    font-family:'graphik-reg',Arial,sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: inherit;
+	}
+	&__inner_line_office{
+	margin-left: -75px;
+	margin-bottom: 50px;
+	}
+	&__inner_line_vacancies{
+	margin-top: 100px;
+	}
+	&__culture-list{
+	padding: 70px 0 0 0;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	}
+	&__culture-item{
+	width: 350px;
+	padding-right: 100px;
+	}
+	&__heading{
+	font-family:'graphik-bold',Arial,sans-serif;
+    font-size: 20px; 
+    line-height: 28px;
+    margin-bottom: 30px;
+
+	}
+	&__idea{
+    font-family:'graphik-reg',Arial,sans-serif;
+    font-size: 16px; 
+    line-height: 24px;
+    }
+    &__vacancies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    &__vacancies-item{
+    width: 450px;
+    margin-bottom: 100px;
+    }
+    &__vacancies-date{
+    display: inline-block;
+    font-family:'graphik-reg',Arial,sans-serif;
+    font-size: 16px; 
+    line-height: 24px;
+    margin-bottom: 20px;
+    opacity: .4;
+    color: $color-submain;
+    }
+    &__vacancies-link{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+    font-family:'graphik-bold',Arial,sans-serif;
+    font-size: 20px; 
+    line-height: 28px;
+    color: $color-main;
+    }
+    &__vacancies-link:after {
+    width: 0;
+    height: 2px;
+    transition: width 0.2s ease;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $color-main;
+	}
+	&__vacancies-link:hover:after {
+    width: 100%;
+
+	}
+	&__vacancies-link:hover{
+	color:$color-main;
+	}
+    &__arrow{
+	position: absolute;
+	top:5px;
+	right: -60px;
+	width: 40px;
+	height: 10px;
+	overflow: hidden;
+
+	}
+	&__arrow svg{
+	margin-left: -10px;
+	transition: all .6s ease;
+	fill:$color-main;
+	stroke:$color-main;
+	}
+	&__vacancies-link:hover &__arrow svg{
+	fill:$color-main;
+	stroke:$color-main;
+	margin-left: 0px;
+	}
+	&__vacancies-desc{
+	display: block;
+	font-family:'graphik-reg',Arial,sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+	color: #151515;
+	}
+}

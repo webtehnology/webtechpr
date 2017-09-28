@@ -1,0 +1,6 @@
+/*1100px до 1440px*/
+@custom-media --large-only screen and (min-width: 1100px) and (max-width: 90em);
+/*1441px до 1920px*/
+@custom-media --xlarge-only screen and (min-width: 90.0001em) and (max-width: 120em);
+/*1920px до 100%*/
+@custom-media --xxlarge-only screen and (min-width: 120.0001em) and (max-width: 99999999em);

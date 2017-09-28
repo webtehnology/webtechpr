@@ -1,0 +1,220 @@
+.blog{
+	margin:50px 0; 
+	&__filter{
+	display: flex;
+	position: relative;
+	margin-bottom: 50px;
+	}
+	&__filter-item{
+	margin-right: 40px;
+	font-family:'graphik-bold',Arial,sans-serif;
+	border-bottom: 1px dashed;
+    font-size: 18px;
+    line-height: 24px;
+    color:$color-submain;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+	}
+	&__filter-item_active{
+	border-bottom: none;
+	color:$color-main;
+	}
+	&__list{
+	margin-left: -75px;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	}
+	&__item{
+	position: relative;
+	width: calc(100%/3 - 30px);
+	margin-right: 30px;
+	margin-bottom: 120px;
+	background-color: #f5f6f8.65;
+	opacity: 1;
+	clear: both;
+ 	overflow: hidden;
+ 	animation: in .8s linear 0s 1 forwards;
+	 -webkit-animation: in .8s linear 0s 1 forwards;
+	}
+	&__item_noactive{
+	 animation: remove .8s linear 0s 1 forwards;
+	 -webkit-animation: remove .8s linear 0s 1 forwards;
+	}
+	&__item_active{
+	 animation: in .5s linear 0s 1 forwards;
+	 -webkit-animation: in .5s linear 0s 1 forwards;
+	}
+	&__item_full{
+	width: 100%;
+	flex-basis: 100%;
+	background-color: #fff;
+	}
+	&__item_full &__image{
+	float: left;
+	max-width: calc(100%/3 *2 - 15px );
+	height: 300px;
+	}
+	&__item_full &__cover{
+	max-width: calc(100%/3 - 70px);
+	height: 260px;
+	float: right;
+	
+	}
+	&__item_full &__data{
+	position: absolute;
+	top:20px;
+	left:-150px;
+	}
+	&__item_full &__tags{
+	color: #fff;
+	}
+	&__cover{
+	padding:20px; 
+	position: relative;
+	}
+	&__cover_bg &__link,&__cover_bg &__link:hover, &__cover_bg &__text, &__cover_bg &__data{
+	color: #fff;
+	}
+	&__cover_bg &__link:after{
+		background-color:#fff;
+	}
+	&__tags{
+	display: inline-block;
+	margin-bottom: 20px;
+	font-family:'graphik-reg',Arial,sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #009df2;
+    border-bottom: 1px dashed;
+	}
+	&__data{
+	position: absolute;
+	top:-60px;
+	left: 20px;
+	color:$color-submain;
+	font-family:'graphik-bold',Arial,sans-serif;
+    font-size: 24px;
+	}
+	&__data span{
+	display: block;
+	font-family:'graphik-reg',Arial,sans-serif;
+    font-size: 14px;
+	}
+	&__link{
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	position: relative;
+	display: inline-block;
+	font-family:'graphik-bold',Arial,sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+	color: #151515;
+	transition: all .5s ease;
+	}
+	&__link:after {
+    width: 0;
+    height: 2px;
+    transition: width 0.2s ease;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $color-main;
+	}
+	&__link:hover:after {
+    width: 100%;
+
+	}
+	&__link:hover{
+	color:$color-main;
+	}
+	&__text{
+	display: block;
+	font-family:'graphik-reg',Arial,sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+	color: #151515;
+	}
+}
+
+@-webkit-keyframes remove{
+ 0% {opacity: 1;
+ max-height: 300px;
+margin-bottom: 120px;}
+ 99.9% {opacity: 0;
+ max-height: 0px;
+ margin-bottom: 0;}
+ 100% {opacity: 0;
+ max-height: 0;
+  margin-bottom: 0;
+ animation: poof 0.1s linear 0s 1;
+ -webkit-animation: poof 0.1s linear 0s 1;}
+}
+ 
+@keyframes remove{
+ 0% {opacity: 1;
+ max-height: 300px;
+margin-bottom: 120px;}
+ 99.9% {opacity: 0;
+ max-height: 0px;
+ margin-bottom: 0;
+}
+ 100% {opacity: 0;
+ max-height: 0;
+ margin-bottom: 0;
+ animation: poof 0.1s linear 0s 1;
+ -webkit-animation: poof 0.1s linear 0s 1;}
+}
+ 
+@-webkit-keyframes poof{
+ from {display: block;}
+ to {display: none;}
+}
+ 
+@keyframes poof{
+ from {display: block;}
+ to {display: none;}
+}
+
+
+@-webkit-keyframes in{
+ 0% {opacity: 1;
+ max-height: 300px;
+margin-bottom: 120px;}
+ 99.9% {opacity: 0;
+ max-height: 0px;
+ margin-bottom: 0;}
+ 100% {opacity: 0;
+ max-height: 0;
+  margin-bottom: 0;
+ animation: poof 0.1s linear 0s 1;
+ -webkit-animation: poof 0.1s linear 0s 1;}
+}
+ 
+@keyframes in{
+ 0% {opacity: 0;
+ max-height:0px;
+margin-bottom: 0px;}
+ 99.9% {opacity: 1;
+ max-height: 300px;
+ margin-bottom: 120px;
+}
+ 100% {opacity: 1;
+ max-height: 300px;
+margin-bottom: 120px;
+ animation: poofin 0.1s linear 0s 1;
+ -webkit-animation: poofin 0.1s linear 0s 1;}
+}
+ 
+@-webkit-keyframes poofin{
+ from {display:none;}
+ to {display: block;}
+}
+ 
+@keyframes poofin{
+ from {display:none;}
+ to {display: block;}
+}

@@ -1,0 +1,157 @@
+.main-menu{
+	padding-left: 16px;
+
+	&__open{
+	margin: 9px 0 0 0px;
+	padding: 0 0 4px 0;
+	font-family:'graphik-bold',Arial,sans-serif;
+	font-size: 18px;
+	color:inherit;
+	border-bottom: 1px dashed;
+	cursor: pointer;
+	}
+	&__close{
+		position: absolute;
+		top: 33px;
+        right: 45px;
+        width: 30px;
+        height: 30px;
+		color: #000;
+		cursor: pointer;
+		
+	}
+	&__close:after{
+		content: '';
+		width: 30px;
+		height: 2px;
+		background-color: #000;
+		position:absolute;
+		top: 50%;
+		left: 0;
+		transform: rotate(45deg);
+		transition: all .8s ease;
+	}
+	&__close:before{
+		content: '';
+		width: 30px;
+		height: 2px;
+		background-color: #000;
+		position:absolute;
+		top: 50%;
+		left: 0;
+		transform: rotate(-45deg);
+		transition: all .8s ease;
+	}
+	&__close:hover:after{
+	transform: rotate(-45deg);
+	background-image: linear-gradient(to bottom, #CA285E 0%, #c3178c 100%);
+	}
+	&__close:hover:before{
+	
+	transform: rotate(45deg);
+	background-image: linear-gradient(to bottom, #CA285E 0%, #c3178c 100%);	
+	}
+	&__content{
+		position:fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		background-color: #fff;
+		z-index: 100;
+		transform: translateX(101%) perspective(500px);
+    	transition: transform .8s cubic-bezier(.645,.045,.355,1);
+        -ms-transform-origin: 0% 50%;
+        transform-origin: 0% 50%;
+
+	}
+	&__content_active{
+	transform: translateX(0%);
+	}
+	&__list{
+	display: flex;
+	flex-wrap: wrap;
+	}
+	&__item{
+	width: 320px;
+	margin-bottom: 100px;
+	}
+	&__link{
+	position: relative;
+	display: inline-block;
+	font-family:'graphik-bold',Arial,sans-serif;
+    font-size: 42px;
+    line-height: 56px;
+	color: #151515;
+	transition: all .5s ease;
+	}
+	&__link:after {
+    width: 0;
+    height: 2px;
+    transition: width 0.2s ease;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+	}
+	&__link:hover:after {
+    width: 100%;
+	}
+	&__item:hover &__link_company{
+	color: #3e7cfd;
+	}
+	&__item:hover &__link_company:after{
+	background-color: #3e7cfd;
+	}
+	&__item:hover &__link_work{
+	color: #8d12f9;
+	}
+	&__item:hover &__link_work:after{
+	background-color: #8d12f9;
+	}
+	&__item:hover &__link_review{
+	color: #0bb14d;
+	}
+	&__item:hover &__link_review:after{
+	background-color: #0bb14d;
+	}
+	&__item:hover &__link_price{
+	color: #f8af29;
+	}
+	&__item:hover &__link_price:after{
+	background-color: #f8af29;
+	}
+	&__item:hover &__link_service{
+	color: #2734aa;
+	}
+	&__item:hover &__link_service:after{
+	background-color: #2734aa;
+	}
+	&__item:hover &__link_blog{
+	color: #c3178c;
+	}
+	&__item:hover &__link_blog:after{
+	background-color: #c3178c;
+	}
+	&__item:hover &__link_hh{
+	color: #d66509;
+	}
+	&__item:hover &__link_hh:after{
+	background-color: #d66509;
+	}
+	&__item:hover &__link_contact{
+	color: #8228be;
+	}
+	&__item:hover &__link_contact:after{
+	background-color: #8228be;
+	}
+	&__text{
+	display: block;
+	font-family:'graphik-reg',Arial,sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+	color: #151515;
+	}
+}

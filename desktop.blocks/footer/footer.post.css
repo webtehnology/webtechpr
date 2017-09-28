@@ -1,0 +1,68 @@
+.footer{
+	width: 100%;
+	display: inline-block;
+	padding: 60px 0 150px 0;
+	border-top: 1px solid #fcfcfe;
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__company{
+	display: flex;
+	flex-wrap: wrap;
+	width: 660px;
+	}
+	&__company-line{
+	display: block;
+	}
+	&__copy{
+	position: relative;
+	margin-top: 20px;
+	padding-top: 30px;
+	}
+	&__copy:after{
+	content: '';
+	position: absolute;
+	top:5px;
+	left: 0;
+	width: 50px;
+	height: 5px;
+	background-color: $color-submain;
+	}
+	&__contact{
+	font-family:'graphik-reg',Arial,sans-serif;
+	font-size: 18px;
+	line-height: 28px;
+	float: left;
+	margin-right: 60px;
+	color: inherit;
+	}
+	&__call{
+	display: block;
+	color: $color-main;
+	font-family:'graphik-bold',Arial,sans-serif;
+	}
+	&__last{
+	vertical-align: top;
+	}
+	&__last-content{
+	display: flex;
+
+	}
+	&__policy{
+	display: inline-block;
+	font-family:'graphik-reg',Arial,sans-serif;
+	font-size: 18px;
+	line-height: 22px;
+	color: inherit;
+	width: 200px;
+	}
+	&__social{
+	display: inline-block;
+	padding-top: 3px;
+	margin-right: 35px;
+	}
+	&__policy:hover{
+	color: $color-main;
+	}
+}

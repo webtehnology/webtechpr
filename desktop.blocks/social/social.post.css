@@ -1,0 +1,26 @@
+.social{
+	&__list{
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__item{
+	position: relative;
+	font-family:'webtech';
+	width: 35px;
+	margin-left: 15px;
+	color: inherit;
+	}
+	&__item:after{
+	position: absolute;
+	left: 0;
+	top:0;
+	font-size: 36px;
+	color: inherit;
+	}
+	&__item_fb:after{
+	content: '\e907'
+	}
+	&__item_instagram:after{
+	content: '\e909'
+	}
+}

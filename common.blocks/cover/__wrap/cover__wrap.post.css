@@ -1,0 +1,9 @@
+.cover__wrap{
+	margin: 0 auto;
+
+}
+@media (--large-only) {
+	.cover__wrap{
+		width: 100%;
+}
+}

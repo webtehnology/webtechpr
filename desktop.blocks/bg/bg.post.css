@@ -1,0 +1,36 @@
+.bg__home{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: red;
+}
+.bg__home:after{
+    position: absolute;
+    content: '';
+    width: 100.5%;
+    height: 100.5%;
+    top: -.25%;
+    left: -.25%;
+    background-color: #2d2d2d.54;
+
+}
+.bg__image{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background: no-repeat 50% 50%;
+    background-size: cover;
+}
+.bg__video{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    min-width: 100.1%;
+    min-height: 100.1%;
+}

@@ -1,0 +1,43 @@
+.faces-data{
+	&__title{
+	margin-bottom: 10px;
+	font-family:'graphik-bold',Arial,sans-serif;
+	font-size: 28px;
+	color: $color-submain;
+	}
+	&__post{
+	margin-bottom: 20px;
+	font-family:'graphik-reg',Arial,sans-serif;
+	font-size: 18px;
+	opacity: .3;
+	}
+	&__fb{
+	display: inline-block;
+	position: relative;
+	font-family:'webtech';
+	margin-bottom: 20px;
+	}
+	&__fb:after{
+	content: '\e907';
+	font-size: 34px;
+	color:#b7b2b2;
+	}
+	&__fb:hover:after{
+	color: $color-main;
+	}
+	&__idea-heading{
+	margin-bottom: 10px;
+	font-family:'graphik-reg',Arial,sans-serif;
+	font-size: 24px;
+	color: $color-submain;
+
+	}
+	&__idea-text{
+	max-width: 700px;
+    margin-bottom: 20px;
+    font-family:'graphik-reg',Arial,sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-submain;
+	}
+}

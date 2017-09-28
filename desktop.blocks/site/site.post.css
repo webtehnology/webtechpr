@@ -1,0 +1,83 @@
+.site{
+	width: 100%;
+	&__offers{
+	display: flex;
+	justify-content:space-between;
+	align-items:flex-start;
+	}
+	&__offer{
+	display:block;
+	width: 500px;
+	height: auto;
+	margin-right: 60px;
+	background: #f2f2f2.45;
+	}
+	&__offer_type_seo{
+	width: 410px;
+	margin-right: 30px;
+	}
+	&__offer_lider{
+	background: #5a4eb0.45;
+	}
+	&__inner{
+	padding:40px; 
+	}
+	&__title{
+	font-family:'graphik-bold',Arial,sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: $color-submain;
+    margin-bottom: 15px;
+	}
+	&__desc{
+	font-family:'graphik-reg',Arial,sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 15px;
+	}
+	&__composition{
+	width: 100%;
+	}
+	&__composition-list{
+	padding-bottom: 30px;
+	width: 100%;
+	}
+	&__composition-title, &__info-title, &__info-value{
+	vertical-align: top;
+	margin-bottom: 15px;
+	font-family:'graphik-bold',Arial,sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-submain;
+
+	}
+	&__composition-item{
+	padding-left: 30px;
+	position: relative;
+	font-family:'graphik-reg',Arial,sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-submain;
+	}
+	&__composition-item:before {
+    content: "\2014";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+	}
+	&__info-line{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	}
+	&__info-title span{
+	max-width: 150px;
+	display: block;
+	font-family:'graphik-reg',Arial,sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    opacity: .4;
+	}
+}

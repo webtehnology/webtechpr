@@ -1,0 +1,50 @@
+.faces{
+	margin:100px 0; 
+	&__inner{
+	position: relative;
+	display: flex;
+	justify-content:space-between;
+	}
+
+	&__image{
+	margin-left: -75px;
+	width: 820px;
+	height: 486px;
+	}
+	&__content{
+	width: 350px;
+	}
+	&__control{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 350px;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	}
+	&__control-item_active &__preview{
+	opacity:1;
+	filter:none;
+	transform: matrix(1.15, 0, 0, 1.15, 0, 0);
+	}
+	&__preview{
+	width: 80px;
+	height: 80px;
+	background-size: cover;
+	border-radius: 100%;
+	overflow: hidden;
+	opacity: .3;
+	cursor: pointer;
+	filter: grayscale(100%);
+  	filter: gray;
+  	transition: all 1s;
+  	transform: matrix(1, 0, 0, 1, 0, 0);
+  	transition: transform .8s cubic-bezier(.645,.045,.355,1);
+	}
+	&__preview:hover{
+	opacity:1;
+	filter:none;
+	transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+	}
+}
